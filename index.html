@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurhazirah Abdul Rahman | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">nurhazirah</div>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#bio">Bio</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a class="nav-button" href="#contact">Contact Me</a>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-content reveal">
+      <h1>Building practical solutions through data and technology.</h1>
+      <p class="hero-summary">
+        Focused on creating structured, efficient, and user-friendly systems
+        that solve real operational challenges.
+      </p>
+    </div>
+  </section>
+
+  <section class="bio-section" id="bio">
+    <div class="bio-container reveal">
+
+      <div class="bio-photo-wrap">
+        <img src="assets/images/profilenurhazirah.jpg" alt="Nurhazirah Abdul Rahman">
+      </div>
+
+      <div class="bio-info">
+  <p class="section-label">About Me</p>
+  <h2>Nurhazirah Binti Abdul Rahman</h2>
+
+  <p class="bio-lead">
+    Assalamualaikum and hi. I am currently pursuing a Bachelor of Computer Science
+    in Data Science at Universiti Kebangsaan Malaysia.
+  </p>
+
+  <p class="bio-text">
+    I would describe myself as someone who was initially quite shy, but over time I
+    have become more confident in communicating, working in teams, and building good
+    relationships with others.
+  </p>
+
+  <p class="bio-text">
+    I enjoy learning new tools and technologies related to data, systems,
+    and web development. Over time, I have become more confident in
+    communication, teamwork, and adapting to different environments.
+  </p>
+
+  <p class="bio-text">
+    Besides academics and technology, I also enjoy helping others,
+    volunteering, and playing badminton during my free time.
+  </p>
+</div>
+  </section>
+
+  <section class="project-section" id="projects">
+    <div class="project-wrapper reveal">
+
+      <div class="project-content">
+        <p class="section-label">Featured Project</p>
+
+        <h2>eBantuan Siswa UKM</h2>
+
+        <p class="project-type">Full-Stack Web Application · Final Year Project</p>
+
+        <p class="project-description">
+          eBantuan Siswa UKM is a web-based student aid management system designed
+          to make the application, review, donation, and distribution process more
+          organized, transparent, and easier to manage.
+        </p>
+
+        <div class="project-features">
+          <div>
+            <span>01</span>
+            <p>Student, donor, and admin user roles</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <p>Online application form and document upload</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <p>Application status tracking</p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <p>Dashboard, inventory, donation, and reporting management</p>
+          </div>
+        </div>
+
+        <div class="project-tools">
+          <span>Laravel</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-carousel-box">
+        <div class="carousel-frame">
+          <button class="carousel-btn prev" onclick="changeSlide(-1)" aria-label="Previous image">
+            &#10094;
+          </button>
+
+          <img
+            id="ebantuanSlide"
+            src="assets/images/ebantuan-preview.jpg"
+            alt="eBantuan Siswa UKM interface preview"
+            onclick="openImage(this)"
+          >
+
+          <button class="carousel-btn next" onclick="changeSlide(1)" aria-label="Next image">
+            &#10095;
+          </button>
+        </div>
+
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <p class="interface-note">
+          Selected interface previews from the eBantuan Siswa UKM platform.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="other-projects-section" id="data-projects">
+    <div class="other-projects-wrapper reveal">
+
+      <div class="section-heading">
+        <p class="section-label">More Projects</p>
+        <h2>Data Analysis & AI Projects</h2>
+        <p>
+          Additional projects focused on data collection, cleaning, analysis,
+          and simple AI-based interaction.
+        </p>
+      </div>
+
+      <div class="project-card-grid">
+
+        <div class="mini-project-card carsome-card">
+          <div>
+            <div class="mini-project-image">
+              <img 
+                src="assets/images/carsome-brand-chart.jpg"
+                alt="Carsome car brand analysis chart"
+                onclick="openImage(this)"
+              >
+            </div>
+
+            <div class="mini-project-top">
+              <span class="project-category">Data Analysis</span>
+              <span class="project-year">2024</span>
+            </div>
+
+            <h3>Carsome ETL Analysis</h3>
+
+            <p>
+              Collected and cleaned used car listing data from Carsome, then performed simple
+              exploratory analysis to understand car brand, age, pricing, and listing patterns.
+            </p>
+
+            <ul>
+              <li>Scraped 200+ used car listings</li>
+              <li>Cleaned and transformed raw data</li>
+              <li>Created car age feature for analysis</li>
+              <li>Visualized listing trends by brand and year</li>
+            </ul>
+
+            <div class="mini-tools">
+              <span>Python</span>
+              <span>BeautifulSoup</span>
+              <span>Pandas</span>
+              <span>Google Colab</span>
+            </div>
+          </div>
+
+          <div class="mini-project-footer">
+            <a href="https://colab.research.google.com/drive/1SyeAgIrVnJmef8DjqxnfrPoemklVTxqC?usp=sharing" target="_blank">
+              View Notebook →
+            </a>
+          </div>
+        </div>
+
+        <div class="mini-project-card foodie-card">
+          <div>
+            <div class="mini-project-image">
+              <img 
+                src="assets/images/foodiebot-preview.jpg"
+                alt="FoodieBot chatbot preview"
+                onclick="openImage(this)"
+              >
+            </div>
+
+            <div class="mini-project-top">
+              <span class="project-category chatbot-category">Chatbot</span>
+              <span class="project-year">2024</span>
+            </div>
+
+            <h3>FoodieBot Chatbot</h3>
+
+            <p>
+              A simple chatbot project developed to simulate food-related conversations and
+              provide restaurant or menu recommendations based on user input.
+            </p>
+
+            <ul>
+              <li>Built chatbot response flow using Python</li>
+              <li>Processed user input and intent matching</li>
+              <li>Tested simple conversational interaction</li>
+              <li>Deployed and tested using Google Colab</li>
+            </ul>
+
+            <div class="mini-tools">
+              <span>Python</span>
+              <span>NLTK</span>
+              <span>Google Colab</span>
+              <span>Chatbot</span>
+            </div>
+          </div>
+
+          <div class="mini-project-footer">
+            <a href="https://colab.research.google.com/drive/1oGYFwhbnz4MJdzxXWXIvoLzcdZwSazmb?usp=sharing" target="_blank">
+              View Notebook →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+
+    <!-- EXPERIENCE TNB -->
+
+    <section class="tnb-work-section" id="tnb-experience">
+
+  <div class="tnb-work-wrapper reveal">
+
+    <div class="section-heading">
+      <p class="section-label">Freelance Experience</p>
+
+      <h2>Electrical Application Support</h2>
+
+      <p>
+        Freelance documentation and process support for TNB-related electrical
+        applications, including application tracking, document preparation,
+        and approval monitoring.
+      </p>
+    </div>
+
+    <div class="tnb-work-card">
+
+      <!-- IMAGE -->
+      <div class="tnb-single-image">
+        <img
+          src="assets/images/tnb-deposit-preview.jpg"
+          alt="TNB application workflow preview"
+          onclick="openImage(this)"
+        >
+      </div>
+
+      <!-- CONTENT -->
+      <div class="tnb-work-content">
+
+        <div class="work-top">
+
+          <div>
+            <h3>TNB-related Application Process</h3>
+
+            <p class="work-role">
+              Freelance Technical & Documentation Support
+            </p>
+          </div>
+
+          <span class="work-year">2024 - Present</span>
+
+        </div>
+
+        <p class="work-description">
+          Assisted in handling electrical application workflows,
+          documentation preparation, client coordination,
+          and application status monitoring for residential
+          and commercial electricity supply requests.
+        </p>
+
+        <ul class="work-list">
+          <li>Supported single-phase and three-phase application workflows</li>
+
+          <li>
+            Prepared and checked required forms and supporting documents
+          </li>
+
+          <li>
+            Monitored approval progress until installation completion
+          </li>
+
+          <li>
+            Organized application records for tracking and reference
+          </li>
+        </ul>
+
+        <div class="work-tools">
+          <span>myTNB</span>
+          <span>Documentation</span>
+          <span>Process Tracking</span>
+          <span>Client Coordination</span>
+          <span>Data Verification</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+   <!-- EXPERIENCE HONDA MALAYSIA -->
+<section class="work-section" id="experience">
+
+  <div class="work-wrapper reveal">
+
+    <div class="section-heading">
+      <p class="section-label">Work Experience</p>
+
+      <h2>IT Operations & Asset Deployment</h2>
+
+      <p>
+        Real working experience involving enterprise IT asset replacement,
+        deployment coordination, inventory tracking, and operational support
+        at Honda Malaysia.
+      </p>
+    </div>
+
+    <div class="work-card">
+
+      <div class="work-image">
+        <img 
+          src="assets/images/device-inventory.jpg"
+          alt="IT asset inventory and deployment preparation"
+          onclick="openImage(this)"
+        >
+      </div>
+
+      <div class="work-content">
+
+        <div class="work-top">
+          <div>
+            <h3>Honda Malaysia Sdn. Bhd.</h3>
+            <p class="work-role">
+              IT Security & Operations Technician
+            </p>
+          </div>
+
+          <span class="work-year">2023 - 2024</span>
+        </div>
+
+        <p class="work-description">
+          Supported large-scale IT asset replacement operations involving
+          deployment coordination, inventory handling, documentation,
+          and operational workflow management across multiple locations.
+        </p>
+
+        <div class="work-highlights">
+
+          <div>
+            <span>400+</span>
+            <p>IT assets managed and tracked company-wide</p>
+          </div>
+
+          <div>
+            <span>20+</span>
+            <p>Departments involved in on-site verification</p>
+          </div>
+
+          <div>
+            <span>RM3M</span>
+            <p>Enterprise IT replacement project support</p>
+          </div>
+
+        </div>
+
+        <ul class="work-list">
+          <li>Managed deployment tracking and documentation workflow</li>
+          <li>Coordinated with vendors and internal departments</li>
+          <li>Conducted on-site IT asset verification and assessment</li>
+          <li>Supported enterprise device replacement operations</li>
+        </ul>
+
+        <div class="work-tools">
+          <span>Microsoft Excel</span>
+          <span>IT Asset Tracking</span>
+          <span>Operations Support</span>
+          <span>Documentation</span>
+          <span>Vendor Coordination</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="simple-section" id="contact">
+    <p class="section-label reveal">Contact</p>
+    <h2 class="reveal">Let’s Connect</h2>
+    <p class="reveal">Email: nhazirah483@gmail.com</p>
+    <p class="reveal">Phone: +60 182532215</p>
+  </section>
+
+</main>
+
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+  <span class="close-popup">&times;</span>
+  <img class="popup-content" id="popupImage" alt="Expanded preview">
+</div>
+
+</body>
+</html>
